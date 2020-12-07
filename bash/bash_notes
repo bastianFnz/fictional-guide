@@ -1,0 +1,76 @@
+Para indicarle que interprete  que se va utilizar:
+#! /bin/bash
+
+Para escribir por pantalla:
+echo "this is a text"
+
+Para indicarle al archivo que tiene permisos de ejecucion: 
+chmod +x file.ext
+
+Para indicarle que exporte un resultado a un archivo:
+operation > file.ext
+echo "hello" > hello.txt
+
+Para sobreescribir un archivo:
+cat > file.ext
+
+Continua la escritura en despues del ultimo caracter.
+cat >> file.ext
+
+Nota: Se ejecuta el archivo, se habilita un espacio para escribir al cerrar la ejecucion del script, el archivo es sobreescrito.  
+
+Para imprimir en pantalla un texto completo:
+cat << varname
+this is a text 
+with other line
+varname
+
+Para crear un comentario:
+#this is un comment
+
+Para crear un comentario de bloque:
+: '
+this
+is a
+comment'
+
+Para crear variable:
+varname=value
+
+Para llamar a una variable
+$varname
+"$varname"
+
+Para crear un instruccion condicional:
+if [ $var1 cmp $var2 ]
+then
+  operation
+else
+  operation
+fi
+
+Para hacer comparaciones anidadas:
+
+if (( $count < 9 ))
+them
+  echo "first condition true"
+elif (( $count > 9 ))
+them
+  echo "second condition true"
+else
+  echo "the condition is false"
+fi
+
+Para hacer concatenaciones con condicionales:
+
+and = && = -a 
+ or = || = -o
+
+if [] && []
+if [[ && ]]
+if [ -a ]
+
+comparadores
+-eq = igual
+-gt = mayor
+-lt = menor
