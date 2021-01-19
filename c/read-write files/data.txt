@@ -1,0 +1,5 @@
+Elena 25 43
+Juan 5 8
+Sonia 2 1
+Julia 3 17
+Hay 2 de los nombres que comienza por la J
